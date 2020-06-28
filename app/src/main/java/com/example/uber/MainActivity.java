@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         SessionConfiguration config = new SessionConfiguration.Builder().
-                setClientId("lKkYsil2aLxytykLD18DE0MJDYpY63CT").
+                setClientId("Enter your client id").
                 setServerToken("").
                 //setRedirectUri().
                 setScopes(Arrays.asList(Scope.RIDE_WIDGETS)).
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         RideParameters rideParams = new RideParameters.Builder()
                 // Optional product_id from /v1/products endpoint (e.g. UberX). If not provided, most cost-efficient product will be used
-                .setProductId("a1111c8c-c720-46c3-8534-2fcdd730040d")
+                .setProductId("enter your product id")
                 // Required for price estimates; lat (Double), lng (Double), nickname (String), formatted address (String) of dropoff location
                 .setDropoffLocation(
                         37.775304, -122.417522, "Uber HQ", "1455 Market Street, San Francisco")
